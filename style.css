@@ -1,0 +1,177 @@
+@import url('https://fonts.googleapis.com/css2?family=Graduate&family=Yanone+Kaffeesatz:wght@300;400;500;700&display=swap');
+
+:root{
+    --padding-container: 100px 0;
+    --color-title: #B01920;
+
+}
+
+body{
+    
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+    background-color: black;
+
+}
+
+.container{
+
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    overflow: hidden;
+    padding: var(--padding-container);
+
+}
+
+.hero{
+
+    width: 100%;
+    height: 100vh;
+    min-height: 600px;
+    max-height: 800px;
+    position: relative;
+    display: grid;
+    grid-template-rows: 100px 1fr;
+    color:#B01920;
+
+}
+
+.hero::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(180deg, #0000008c 0%, #0000008c 100% ), url('/imagenes/Consola.jpg');
+    background-size: cover;
+    clip-path: polygon(0 0, 100% 0, 100% 70%, 50% 100%, 0 70%);
+    z-index: -1;
+}
+
+.nav{
+
+    --padding-container:0;
+    height: 100%;
+    display: flex;
+    align-items: center;
+
+}
+
+.nav__title{
+
+    font-weight:800;
+    font-size: 3rem;
+
+}
+
+.nav__link{
+
+    margin-left: auto;
+    padding: 0;
+    display: grid;
+    grid-auto-flow: column;
+    grid-auto-columns: max-content;
+    gap: 2em;
+
+}
+
+.nav__items{
+
+    list-style: none;
+
+}
+
+.nav__links{
+
+    color: #B01920;
+    text-decoration: none;
+
+}
+
+.nav__menu{
+
+    margin-left: auto;
+    cursor: pointer;
+    display: none;
+
+}
+
+.nav__img{
+
+    display: block;
+    width: 30px;
+}
+
+.nav__close{
+
+    display: var(--show, none);
+
+}
+
+.hero__container{
+
+    max-width: 800px;
+    display: grid;
+    grid-auto-rows: max-content;
+    gap: 1em;
+    padding-bottom: 100px;
+    text-align: center;
+    
+}
+
+.hero__title{
+
+    font-size: 5rem;
+
+}
+
+.hero__paragraph{
+
+    margin-bottom: 20px;
+    font-size:larger;
+
+}
+
+.cta{
+
+    display: inline-block;
+    background-color: #B01920;
+    justify-self: center;
+    padding: 13px 30px;
+    border-radius: 32px;
+    color: #000;
+    text-decoration: none;
+
+}
+.main{
+    
+    background-color: #B01920;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+canvas{
+
+    background-color: #000;
+}
+
+.formulario{
+
+    width: 400px;
+    background: #B01920;
+    padding: 30px;
+    margin: auto;
+    margin-top: 100px;
+    border-radius: 5px;
+
+}
+
+.formulario h4{
+
+    font-size: 3rem;
+
+}
